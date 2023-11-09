@@ -57,7 +57,7 @@ class ValueIterationAgent(ValueEstimationAgent):
         self.discount = discount
         self.iterations = iterations
         self.values = util.Counter() # A Counter is a dict with default 0
-        self.runValueIteration()
+        self.runValueIteration() 
 
     def runValueIteration(self):
         # Write value iteration code here
@@ -105,6 +105,7 @@ class ValueIterationAgent(ValueEstimationAgent):
         "*** YOUR CODE HERE ***"
         if self.mdp.isTerminal(state):
             return None
+        
         best_action = None
         max_value = float('-inf')
 
